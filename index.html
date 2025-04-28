@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Данила Богачёв | Портфолио</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+</head>
+<body>
+
+  <!-- Preloader -->
+  <div id="preloader">
+    <div class="loader"></div>
+  </div>
+
+  <!-- Переключатель темы -->
+  <div class="theme-toggle">
+    <input type="checkbox" id="switch">
+    <label for="switch">Тема</label>
+  </div>
+
+  <!-- Header -->
+  <header class="hero">
+    <div id="particles-js"></div> <!-- Контейнер для частиц -->
+
+    <div class="container">
+      <h1><span id="typed-text"></span><span class="cursor">|</span></h1>
+      <p>Фрилансер: сайты, дизайн, монтаж, тексты | 7 лет опыта</p>
+      <a href="#portfolio" class="btn scroll-to">Посмотреть работы</a>
+    </div>
+  </header>
+
+  <!-- Волна под хедером -->
+<div class="wave-container">
+    <svg viewBox="0 0 1200 120" preserveAspectRatio="none">
+      <path d="M0,0V46.29c47.59,22,103.78,39.06,159,39.06s111.41-17.08,159-39.06c47.59-22,103.78-39.06,159-39.06s111.41,17.08,159,39.06c47.59,22,103.78,39.06,159,39.06s111.41-17.08,159-39.06c47.59-22,103.78-39.06,159-39.06s111.41,17.08,159,39.06V0Z" opacity=".25" fill="url(#grad1)"></path>
+      <defs>
+        <linearGradient id="grad1" x1="0" x2="1" y1="0" y2="0">
+          <stop offset="0%" stop-color="#1e90ff"/>
+          <stop offset="100%" stop-color="#00c3ff"/>
+        </linearGradient>
+      </defs>
+    </svg>
+  </div>
+  
+
+  <!-- About -->
+  <section class="about container" id="about">
+    <div class="sticky-title">
+    <h2>О себе</h2>
+    <p>Я — Данила Богачёв, профессиональный фрилансер с 7-летним опытом в разработке сайтов, дизайне, видеомонтаже и написании текстов. Помогаю бизнесу привлекать клиентов и расти в цифровом мире. Работаю качественно, креативно и всегда в срок.</p>
+  </section>
+
+  <!-- Portfolio -->
+  <section class="portfolio container" id="portfolio">
+    <h2>Портфолио</h2>
+
+    <div class="filter-buttons">
+      <button class="filter-btn active" data-filter="all">Все</button>
+      <button class="filter-btn" data-filter="web">Сайты</button>
+      <button class="filter-btn" data-filter="design">Дизайн</button>
+      <button class="filter-btn" data-filter="video">Видео</button>
+    </div>
+
+    <div class="portfolio-grid">
+        <div class="card" data-category="web">
+          <h3>Landing Page</h3>
+          <p>Одностраничный сайт для бизнеса.</p>
+          <button class="btn-more" data-modal="modal1">Подробнее</button>
+        </div>
+        <div class="card" data-category="web">
+          <h3>Интернет-магазин</h3>
+          <p>Разработка полноценной eCommerce платформы.</p>
+          <button class="btn-more" data-modal="modal2">Подробнее</button>
+        </div>
+        <div class="card" data-category="design">
+            <h3>Брендинг</h3>
+          <p>Создание сильной визуальной айдентики.</p>
+          <button class="btn-more" data-modal="modal3">Подробнее</button>
+        </div>
+      </div>
+
+  <!-- Модальные окна -->
+  <div id="modal1" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Landing Page</h2>
+      <p>Разработка конверсионного лендинга, полностью адаптивного под мобильные устройства.</p>
+    </div>
+  </div>
+
+  <div id="modal2" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Интернет-магазин</h2>
+      <p>Проектирование интернет-магазина с высокой производительностью и лёгкой навигацией.</p>
+    </div>
+  </div>
+
+  <div id="modal3" class="modal">
+    <div class="modal-content">
+      <span class="close">&times;</span>
+      <h2>Брендинг</h2>
+      <p>Создание запоминающегося фирменного стиля для бизнеса: логотип, цветовая палитра, типографика.</p>
+    </div>
+  </div>
+
+  <!-- Services -->
+  <section class="services container" id="services">
+    <div class="sticky-title">
+    <h2>Услуги и цены</h2>
+    <table>
+      <thead>
+        <tr>
+          <th>Услуга</th>
+          <th>Описание</th>
+          <th>Цена</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>Сайт "под ключ"</td>
+          <td>Разработка и запуск готового сайта</td>
+          <td>от 25 000₽</td>
+        </tr>
+        <tr>
+          <td>UI/UX дизайн</td>
+          <td>Прототипирование и дизайн интерфейсов</td>
+          <td>от 10 000₽</td>
+        </tr>
+        <tr>
+          <td>Монтаж видео</td>
+          <td>Создание продающих и имиджевых роликов</td>
+          <td>от 7 000₽</td>
+        </tr>
+        <tr>
+          <td>Копирайтинг</td>
+          <td>Написание текстов, сценариев, статей</td>
+          <td>от 4 000₽</td>
+        </tr>
+      </tbody>
+    </table>
+  </section>
+
+  <!-- Contacts -->
+  <section class="contact container" id="contact">
+    <h2>Контакты</h2>
+    <p>Открыт для новых проектов! Пишите — обсудим!</p>
+
+    <form id="contact-form">
+      <input type="text" name="name" placeholder="Ваше имя" required>
+      <input type="email" name="email" placeholder="Ваш Email" required>
+      <textarea name="message" placeholder="Ваше сообщение..." required></textarea>
+      <button type="submit" class="btn">Отправить</button>
+    </form>
+
+    <div class="social-links">
+      <a href="https://t.me/flightwice" target="_blank">Telegram</a>
+      <a href="mailto:danrichevv@vk.com">Email</a>
+      <a href="https://wa.me/79144092454" target="_blank">WhatsApp</a>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="marquee">
+      <p>Открыт для новых проектов ✨ Пишите в Telegram или на почту! ✨ Открыт для новых проектов ✨ Пишите в Telegram или на почту!</p>
+    </div>
+  </footer>
+  
+
+  <!-- Скрипты -->
+  <script src="https://cdn.jsdelivr.net/npm/particles.js@2.0.0/particles.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
